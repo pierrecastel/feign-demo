@@ -9,15 +9,19 @@ import java.util.List;
 @Headers("Content-Type: application/json")
 public interface CatClient {
 
-    @RequestLine("GET /cat")
-    List<Cat> findAll();
+//    @RequestLine("GET /cat")
+//    String findAll();
 
-    @RequestLine("GET /cat/{id}")
-    Cat findById(@Param("id") String id);
+//    @RequestLine("GET /cat")
+//    List<Cat> findAll();
 
-    @RequestLine("POST /cat")
-    Cat create(Cat newCat);
+//    @RequestLine("GET /cat/{id}")
+//    Cat findById(@Param("id") String id);
 
-    @RequestLine("DELETE /cat/{id}")
-    Cat delete(@Param("id") String id);
+//    @RequestLine("POST /cat")
+//    Cat create(Cat newCat);
+
+//    @RequestLine("DELETE /cat/{id}")
+//    @Headers("Role: PuppetMaster")
+//    Cat delete(@Param("id") String id);
 }
